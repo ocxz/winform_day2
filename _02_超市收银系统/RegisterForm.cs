@@ -55,6 +55,9 @@ namespace _02_超市收银系统
         private void RegisterForm_Load_1(object sender, EventArgs e)
         {
             runInput.Focus();
+            runInfoLabel.Visible = false;
+            rupInfoLabel.Visible = false;
+            rrupInfoLabel.Visible = false;
             rStudentPanel.Visible = false;
 
             colleges = MyData.LoadData();
@@ -570,6 +573,7 @@ namespace _02_超市收银系统
                         break;
                     case 3:
                         MessageBox.Show("管理员注册成功");
+                        rStudentPanel.Visible = true;
                         rAdminPanel.Visible = true;
                         break;
                 }
@@ -736,7 +740,7 @@ namespace _02_超市收银系统
             {
                 string userName = runInput.Text.Trim();
                 string userPwd = rupInput.Text;
-                string name = rsNameInfo.Text;
+                string name = rsNameInput.Text;
                 char gender = rsGenderM.Checked ? '男' : '女';
                 string birthday = rsAgeInput.Value.Date.ToShortDateString();
                 string college = rsCollege.SelectedItem.ToString();
@@ -749,9 +753,11 @@ namespace _02_超市收银系统
                 {
                     MessageBox.Show("提交成功");
                     LoginForm loginForm = LoginForm.getForm();
-                    loginForm.Activate();
+                    loginForm.loginName = runInput.Text.Trim();
+                    loginForm.loginPwd = rupInput.Text;
+                    loginForm.category = category;
+                    MyUtils.SetFocus(loginForm.nameTextBox);
                     this.Close();
-                    this.Dispose();
                 }
                 else
                 {
@@ -881,7 +887,10 @@ namespace _02_超市收银系统
                 {
                     MessageBox.Show("提交成功");
                     LoginForm loginForm = LoginForm.getForm();
-                    loginForm.Activate();
+                    loginForm.loginName = runInput.Text.Trim();
+                    loginForm.loginName = rupInput.Text;
+                    loginForm.category = category;
+                    MyUtils.SetFocus(loginForm.nameTextBox);
                     this.Close();
                 }
                 else
@@ -896,5 +905,6 @@ namespace _02_超市收银系统
 
 
         #endregion
+
     }
 }

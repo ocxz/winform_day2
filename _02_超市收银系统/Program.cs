@@ -17,7 +17,8 @@ namespace _02_超市收银系统
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(LoginForm.getForm());
-            //Application.Run(new StudentShowForm());
+            //Application.Run(AdminShowForm.GetForm());
+            //Application.Run(StudentShowForm.GetForm());
 
         }
     }

@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.rLogin = new System.Windows.Forms.Button();
+            this.courseSubmit = new System.Windows.Forms.Button();
             this.cbClass = new System.Windows.Forms.ComboBox();
             this.cbMajor = new System.Windows.Forms.ComboBox();
             this.cbCollege = new System.Windows.Forms.ComboBox();
@@ -94,9 +96,7 @@
             this.Course44 = new System.Windows.Forms.Label();
             this.panelc45 = new System.Windows.Forms.Panel();
             this.Course45 = new System.Windows.Forms.Label();
-            this.panelc1 = new System.Windows.Forms.Panel();
-            this.courseSubmit = new System.Windows.Forms.Button();
-            this.rLogin = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panelc11.SuspendLayout();
@@ -145,6 +145,26 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 100);
             this.panel1.TabIndex = 0;
+            // 
+            // rLogin
+            // 
+            this.rLogin.Location = new System.Drawing.Point(668, 45);
+            this.rLogin.Name = "rLogin";
+            this.rLogin.Size = new System.Drawing.Size(88, 30);
+            this.rLogin.TabIndex = 4;
+            this.rLogin.Text = "返回登录";
+            this.rLogin.UseVisualStyleBackColor = true;
+            this.rLogin.Click += new System.EventHandler(this.RLogin_Click);
+            // 
+            // courseSubmit
+            // 
+            this.courseSubmit.Location = new System.Drawing.Point(549, 45);
+            this.courseSubmit.Name = "courseSubmit";
+            this.courseSubmit.Size = new System.Drawing.Size(89, 30);
+            this.courseSubmit.TabIndex = 3;
+            this.courseSubmit.Text = "提交";
+            this.courseSubmit.UseVisualStyleBackColor = true;
+            this.courseSubmit.Click += new System.EventHandler(this.CourseSubmit_Click);
             // 
             // cbClass
             // 
@@ -215,7 +235,7 @@
             this.tableLayoutPanel1.Controls.Add(this.panelc43, 3, 4);
             this.tableLayoutPanel1.Controls.Add(this.panelc44, 4, 4);
             this.tableLayoutPanel1.Controls.Add(this.panelc45, 5, 4);
-            this.tableLayoutPanel1.Controls.Add(this.panelc1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 100);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -230,11 +250,14 @@
             // 
             // panelc11
             // 
+            this.panelc11.BackColor = System.Drawing.Color.LightCyan;
             this.panelc11.Controls.Add(this.Course11);
             this.panelc11.Location = new System.Drawing.Point(90, 54);
             this.panelc11.Name = "panelc11";
             this.panelc11.Size = new System.Drawing.Size(135, 67);
             this.panelc11.TabIndex = 0;
+            this.panelc11.Tag = "0";
+            this.panelc11.Click += new System.EventHandler(this.Panelc_Click);
             this.panelc11.DoubleClick += new System.EventHandler(this.Panelc11_DoubleClick);
             // 
             // Course11
@@ -272,6 +295,8 @@
             this.panelc21.Name = "panelc21";
             this.panelc21.Size = new System.Drawing.Size(135, 67);
             this.panelc21.TabIndex = 2;
+            this.panelc21.Tag = "5";
+            this.panelc21.Click += new System.EventHandler(this.Panelc_Click);
             this.panelc21.DoubleClick += new System.EventHandler(this.Panelc21_DoubleClick);
             // 
             // Course21
@@ -381,6 +406,8 @@
             this.panelc15.Name = "panelc15";
             this.panelc15.Size = new System.Drawing.Size(138, 67);
             this.panelc15.TabIndex = 8;
+            this.panelc15.Tag = "4";
+            this.panelc15.Click += new System.EventHandler(this.Panelc_Click);
             this.panelc15.DoubleClick += new System.EventHandler(this.Panelc15_DoubleClick);
             // 
             // Course15
@@ -400,6 +427,8 @@
             this.panelc14.Name = "panelc14";
             this.panelc14.Size = new System.Drawing.Size(135, 67);
             this.panelc14.TabIndex = 9;
+            this.panelc14.Tag = "3";
+            this.panelc14.Click += new System.EventHandler(this.Panelc_Click);
             this.panelc14.DoubleClick += new System.EventHandler(this.Panelc14_DoubleClick);
             // 
             // Course14
@@ -419,6 +448,8 @@
             this.panelc13.Name = "panelc13";
             this.panelc13.Size = new System.Drawing.Size(135, 67);
             this.panelc13.TabIndex = 10;
+            this.panelc13.Tag = "2";
+            this.panelc13.Click += new System.EventHandler(this.Panelc_Click);
             this.panelc13.DoubleClick += new System.EventHandler(this.Panelc13_DoubleClick);
             // 
             // Course13
@@ -438,6 +469,8 @@
             this.panelc12.Name = "panelc12";
             this.panelc12.Size = new System.Drawing.Size(135, 67);
             this.panelc12.TabIndex = 11;
+            this.panelc12.Tag = "1";
+            this.panelc12.Click += new System.EventHandler(this.Panelc_Click);
             this.panelc12.DoubleClick += new System.EventHandler(this.Panelc12_DoubleClick);
             // 
             // Course12
@@ -466,6 +499,8 @@
             this.panelc22.Name = "panelc22";
             this.panelc22.Size = new System.Drawing.Size(135, 67);
             this.panelc22.TabIndex = 0;
+            this.panelc22.Tag = "6";
+            this.panelc22.Click += new System.EventHandler(this.Panelc_Click);
             this.panelc22.DoubleClick += new System.EventHandler(this.Panelc22_DoubleClick);
             // 
             // Course22
@@ -485,6 +520,8 @@
             this.panelc23.Name = "panelc23";
             this.panelc23.Size = new System.Drawing.Size(135, 67);
             this.panelc23.TabIndex = 13;
+            this.panelc23.Tag = "7";
+            this.panelc23.Click += new System.EventHandler(this.Panelc_Click);
             this.panelc23.DoubleClick += new System.EventHandler(this.Panelc23_DoubleClick);
             // 
             // Course23
@@ -504,6 +541,8 @@
             this.panelc24.Name = "panelc24";
             this.panelc24.Size = new System.Drawing.Size(135, 67);
             this.panelc24.TabIndex = 14;
+            this.panelc24.Tag = "8";
+            this.panelc24.Click += new System.EventHandler(this.Panelc_Click);
             this.panelc24.DoubleClick += new System.EventHandler(this.Panelc24_DoubleClick);
             // 
             // Course24
@@ -523,6 +562,8 @@
             this.panelc25.Name = "panelc25";
             this.panelc25.Size = new System.Drawing.Size(138, 67);
             this.panelc25.TabIndex = 15;
+            this.panelc25.Tag = "9";
+            this.panelc25.Click += new System.EventHandler(this.Panelc_Click);
             this.panelc25.DoubleClick += new System.EventHandler(this.Panelc25_DoubleClick);
             // 
             // Course25
@@ -543,6 +584,8 @@
             this.panelc35.Name = "panelc35";
             this.panelc35.Size = new System.Drawing.Size(138, 67);
             this.panelc35.TabIndex = 16;
+            this.panelc35.Tag = "14";
+            this.panelc35.Click += new System.EventHandler(this.Panelc_Click);
             this.panelc35.DoubleClick += new System.EventHandler(this.Panelc35_DoubleClick);
             // 
             // Course35
@@ -573,6 +616,8 @@
             this.panelc34.Name = "panelc34";
             this.panelc34.Size = new System.Drawing.Size(135, 67);
             this.panelc34.TabIndex = 17;
+            this.panelc34.Tag = "13";
+            this.panelc34.Click += new System.EventHandler(this.Panelc_Click);
             this.panelc34.DoubleClick += new System.EventHandler(this.Panelc34_DoubleClick);
             // 
             // Course34
@@ -602,6 +647,8 @@
             this.panelc33.Name = "panelc33";
             this.panelc33.Size = new System.Drawing.Size(135, 67);
             this.panelc33.TabIndex = 18;
+            this.panelc33.Tag = "12";
+            this.panelc33.Click += new System.EventHandler(this.Panelc_Click);
             this.panelc33.DoubleClick += new System.EventHandler(this.Panelc33_DoubleClick);
             // 
             // Course33
@@ -621,6 +668,8 @@
             this.panelc32.Name = "panelc32";
             this.panelc32.Size = new System.Drawing.Size(135, 67);
             this.panelc32.TabIndex = 19;
+            this.panelc32.Tag = "11";
+            this.panelc32.Click += new System.EventHandler(this.Panelc_Click);
             this.panelc32.DoubleClick += new System.EventHandler(this.Panelc32_DoubleClick);
             // 
             // Course32
@@ -640,6 +689,8 @@
             this.panelc31.Name = "panelc31";
             this.panelc31.Size = new System.Drawing.Size(135, 67);
             this.panelc31.TabIndex = 20;
+            this.panelc31.Tag = "10";
+            this.panelc31.Click += new System.EventHandler(this.Panelc_Click);
             this.panelc31.DoubleClick += new System.EventHandler(this.Panelc31_DoubleClick);
             // 
             // Course31
@@ -713,6 +764,8 @@
             this.panelc41.Name = "panelc41";
             this.panelc41.Size = new System.Drawing.Size(135, 70);
             this.panelc41.TabIndex = 24;
+            this.panelc41.Tag = "15";
+            this.panelc41.Click += new System.EventHandler(this.Panelc_Click);
             this.panelc41.DoubleClick += new System.EventHandler(this.Panelc41_DoubleClick);
             // 
             // Course41
@@ -732,6 +785,8 @@
             this.panelc42.Name = "panelc42";
             this.panelc42.Size = new System.Drawing.Size(135, 70);
             this.panelc42.TabIndex = 25;
+            this.panelc42.Tag = "16";
+            this.panelc42.Click += new System.EventHandler(this.Panelc_Click);
             this.panelc42.DoubleClick += new System.EventHandler(this.Panelc42_DoubleClick);
             // 
             // Course42
@@ -751,6 +806,8 @@
             this.panelc43.Name = "panelc43";
             this.panelc43.Size = new System.Drawing.Size(135, 70);
             this.panelc43.TabIndex = 26;
+            this.panelc43.Tag = "17";
+            this.panelc43.Click += new System.EventHandler(this.Panelc_Click);
             this.panelc43.DoubleClick += new System.EventHandler(this.Panelc43_DoubleClick);
             // 
             // Course43
@@ -770,6 +827,8 @@
             this.panelc44.Name = "panelc44";
             this.panelc44.Size = new System.Drawing.Size(135, 70);
             this.panelc44.TabIndex = 27;
+            this.panelc44.Tag = "18";
+            this.panelc44.Click += new System.EventHandler(this.Panelc_Click);
             this.panelc44.DoubleClick += new System.EventHandler(this.Panelc44_DoubleClick);
             // 
             // Course44
@@ -789,6 +848,8 @@
             this.panelc45.Name = "panelc45";
             this.panelc45.Size = new System.Drawing.Size(138, 70);
             this.panelc45.TabIndex = 28;
+            this.panelc45.Tag = "19";
+            this.panelc45.Click += new System.EventHandler(this.Panelc_Click);
             this.panelc45.DoubleClick += new System.EventHandler(this.Panelc45_DoubleClick);
             // 
             // Course45
@@ -801,32 +862,12 @@
             this.Course45.TabIndex = 2;
             this.Course45.Text = "无";
             // 
-            // panelc1
+            // panel2
             // 
-            this.panelc1.Location = new System.Drawing.Point(4, 4);
-            this.panelc1.Name = "panelc1";
-            this.panelc1.Size = new System.Drawing.Size(79, 43);
-            this.panelc1.TabIndex = 29;
-            // 
-            // courseSubmit
-            // 
-            this.courseSubmit.Location = new System.Drawing.Point(549, 45);
-            this.courseSubmit.Name = "courseSubmit";
-            this.courseSubmit.Size = new System.Drawing.Size(89, 30);
-            this.courseSubmit.TabIndex = 3;
-            this.courseSubmit.Text = "提交";
-            this.courseSubmit.UseVisualStyleBackColor = true;
-            this.courseSubmit.Click += new System.EventHandler(this.CourseSubmit_Click);
-            // 
-            // rLogin
-            // 
-            this.rLogin.Location = new System.Drawing.Point(668, 45);
-            this.rLogin.Name = "rLogin";
-            this.rLogin.Size = new System.Drawing.Size(88, 30);
-            this.rLogin.TabIndex = 4;
-            this.rLogin.Text = "返回登录";
-            this.rLogin.UseVisualStyleBackColor = true;
-            this.rLogin.Click += new System.EventHandler(this.RLogin_Click);
+            this.panel2.Location = new System.Drawing.Point(4, 4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(79, 43);
+            this.panel2.TabIndex = 29;
             // 
             // AdminShowForm
             // 
@@ -838,6 +879,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "AdminShowForm";
             this.Text = "AdminShowForm";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AdminShowForm_FormClosed);
             this.Load += new System.EventHandler(this.AdminShowForm_Load);
             this.panel1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -951,7 +993,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label Course11;
         private System.Windows.Forms.Panel panelc22;
-        private System.Windows.Forms.Panel panelc1;
         private System.Windows.Forms.Label Course21;
         private System.Windows.Forms.Label Course15;
         private System.Windows.Forms.Label Course14;
@@ -975,5 +1016,6 @@
         private System.Windows.Forms.Label Course45;
         private System.Windows.Forms.Button courseSubmit;
         private System.Windows.Forms.Button rLogin;
+        private System.Windows.Forms.Panel panel2;
     }
 }

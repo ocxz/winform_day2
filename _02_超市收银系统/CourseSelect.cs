@@ -12,6 +12,8 @@ namespace _02_超市收银系统
 {
     public partial class CourseSelect : Form
     {
+
+
         private static CourseSelect courseSelect = new CourseSelect();
         public static CourseSelect GetForm2()
         {
@@ -38,7 +40,6 @@ namespace _02_超市收银系统
             {
                 this.Hide();
                 OutLabel.Text = cbCourse.SelectedItem.ToString();
-                OutLabel.BackColor = Color.LightCyan;
             }
             catch (Exception)
             {

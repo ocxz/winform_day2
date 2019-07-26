@@ -40,7 +40,8 @@
             "英语",
             "物理",
             "化学",
-            "生物"});
+            "生物",
+            "无"});
             this.cbCourse.Location = new System.Drawing.Point(21, 41);
             this.cbCourse.Name = "cbCourse";
             this.cbCourse.Size = new System.Drawing.Size(121, 20);

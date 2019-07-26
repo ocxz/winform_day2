@@ -96,6 +96,17 @@ namespace _02_超市收银系统
 
             }
         }
+
+
+        /// <summary>
+        /// 给指定的文本框获得焦点
+        /// </summary>
+        /// <param name="textBox"></param>
+        public static void SetFocus(System.Windows.Forms.TextBox textBox)
+        {
+            textBox.Focus();
+            textBox.SelectionStart = textBox.Text.Length + 1;
+        }
     }
 
 

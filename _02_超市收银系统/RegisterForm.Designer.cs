@@ -45,22 +45,6 @@
             this.rbAdmin = new System.Windows.Forms.RadioButton();
             this.rpanel = new System.Windows.Forms.Panel();
             this.rStudentPanel = new System.Windows.Forms.Panel();
-            this.rAdminPanel = new System.Windows.Forms.Panel();
-            this.rbSubmit = new System.Windows.Forms.Button();
-            this.raEmailInfo = new System.Windows.Forms.Label();
-            this.raPhoneInfo = new System.Windows.Forms.Label();
-            this.raNameInfo = new System.Windows.Forms.Label();
-            this.raEmailInput = new System.Windows.Forms.TextBox();
-            this.raPhoneInput = new System.Windows.Forms.TextBox();
-            this.raBirthday = new System.Windows.Forms.DateTimePicker();
-            this.raGenderW = new System.Windows.Forms.RadioButton();
-            this.raGenderM = new System.Windows.Forms.RadioButton();
-            this.raNameInput = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.rsMajorInfo = new System.Windows.Forms.Label();
             this.rsMajorInput = new System.Windows.Forms.ComboBox();
             this.rsMajorLabel = new System.Windows.Forms.Label();
@@ -85,6 +69,22 @@
             this.rsAgeLabel = new System.Windows.Forms.Label();
             this.rsGender = new System.Windows.Forms.Label();
             this.rsNameLabel = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.raNameInput = new System.Windows.Forms.TextBox();
+            this.raGenderM = new System.Windows.Forms.RadioButton();
+            this.raGenderW = new System.Windows.Forms.RadioButton();
+            this.raBirthday = new System.Windows.Forms.DateTimePicker();
+            this.raPhoneInput = new System.Windows.Forms.TextBox();
+            this.raEmailInput = new System.Windows.Forms.TextBox();
+            this.raNameInfo = new System.Windows.Forms.Label();
+            this.raPhoneInfo = new System.Windows.Forms.Label();
+            this.raEmailInfo = new System.Windows.Forms.Label();
+            this.rbSubmit = new System.Windows.Forms.Button();
+            this.rAdminPanel = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.rpanel.SuspendLayout();
             this.rStudentPanel.SuspendLayout();
@@ -303,176 +303,6 @@
             this.rStudentPanel.Name = "rStudentPanel";
             this.rStudentPanel.Size = new System.Drawing.Size(560, 352);
             this.rStudentPanel.TabIndex = 13;
-            // 
-            // rAdminPanel
-            // 
-            this.rAdminPanel.Controls.Add(this.rbSubmit);
-            this.rAdminPanel.Controls.Add(this.raEmailInfo);
-            this.rAdminPanel.Controls.Add(this.raPhoneInfo);
-            this.rAdminPanel.Controls.Add(this.raNameInfo);
-            this.rAdminPanel.Controls.Add(this.raEmailInput);
-            this.rAdminPanel.Controls.Add(this.raPhoneInput);
-            this.rAdminPanel.Controls.Add(this.raBirthday);
-            this.rAdminPanel.Controls.Add(this.raGenderW);
-            this.rAdminPanel.Controls.Add(this.raGenderM);
-            this.rAdminPanel.Controls.Add(this.raNameInput);
-            this.rAdminPanel.Controls.Add(this.label6);
-            this.rAdminPanel.Controls.Add(this.label5);
-            this.rAdminPanel.Controls.Add(this.label4);
-            this.rAdminPanel.Controls.Add(this.label3);
-            this.rAdminPanel.Controls.Add(this.label2);
-            this.rAdminPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.rAdminPanel.Location = new System.Drawing.Point(0, 0);
-            this.rAdminPanel.Name = "rAdminPanel";
-            this.rAdminPanel.Size = new System.Drawing.Size(560, 352);
-            this.rAdminPanel.TabIndex = 26;
-            this.rAdminPanel.Visible = false;
-            // 
-            // rbSubmit
-            // 
-            this.rbSubmit.Location = new System.Drawing.Point(331, 259);
-            this.rbSubmit.Name = "rbSubmit";
-            this.rbSubmit.Size = new System.Drawing.Size(75, 23);
-            this.rbSubmit.TabIndex = 14;
-            this.rbSubmit.Text = "提交";
-            this.rbSubmit.UseVisualStyleBackColor = true;
-            this.rbSubmit.Click += new System.EventHandler(this.RaSubmit_Click);
-            // 
-            // raEmailInfo
-            // 
-            this.raEmailInfo.AutoSize = true;
-            this.raEmailInfo.ForeColor = System.Drawing.Color.Red;
-            this.raEmailInfo.Location = new System.Drawing.Point(333, 187);
-            this.raEmailInfo.Name = "raEmailInfo";
-            this.raEmailInfo.Size = new System.Drawing.Size(107, 12);
-            this.raEmailInfo.TabIndex = 13;
-            this.raEmailInfo.Text = "*请输入常用的邮箱";
-            this.raEmailInfo.Visible = false;
-            // 
-            // raPhoneInfo
-            // 
-            this.raPhoneInfo.AutoSize = true;
-            this.raPhoneInfo.ForeColor = System.Drawing.Color.Red;
-            this.raPhoneInfo.Location = new System.Drawing.Point(331, 146);
-            this.raPhoneInfo.Name = "raPhoneInfo";
-            this.raPhoneInfo.Size = new System.Drawing.Size(95, 12);
-            this.raPhoneInfo.TabIndex = 12;
-            this.raPhoneInfo.Text = "*请输入手机号码";
-            this.raPhoneInfo.Visible = false;
-            // 
-            // raNameInfo
-            // 
-            this.raNameInfo.AutoSize = true;
-            this.raNameInfo.ForeColor = System.Drawing.Color.Red;
-            this.raNameInfo.Location = new System.Drawing.Point(356, 39);
-            this.raNameInfo.Name = "raNameInfo";
-            this.raNameInfo.Size = new System.Drawing.Size(71, 12);
-            this.raNameInfo.TabIndex = 11;
-            this.raNameInfo.Text = "*请输入姓名";
-            this.raNameInfo.Visible = false;
-            // 
-            // raEmailInput
-            // 
-            this.raEmailInput.Location = new System.Drawing.Point(189, 182);
-            this.raEmailInput.Name = "raEmailInput";
-            this.raEmailInput.Size = new System.Drawing.Size(100, 21);
-            this.raEmailInput.TabIndex = 10;
-            this.raEmailInput.TextChanged += new System.EventHandler(this.RaEmailInput_TextChanged);
-            this.raEmailInput.KeyDown += new System.Windows.Forms.KeyEventHandler(this.RaEmailInput_KeyDown);
-            this.raEmailInput.Leave += new System.EventHandler(this.RaEmailInput_Leave);
-            // 
-            // raPhoneInput
-            // 
-            this.raPhoneInput.Location = new System.Drawing.Point(189, 146);
-            this.raPhoneInput.Name = "raPhoneInput";
-            this.raPhoneInput.Size = new System.Drawing.Size(100, 21);
-            this.raPhoneInput.TabIndex = 9;
-            this.raPhoneInput.TextChanged += new System.EventHandler(this.RaPhoneInput_TextChanged);
-            this.raPhoneInput.KeyDown += new System.Windows.Forms.KeyEventHandler(this.RaPhoneInput_KeyDown);
-            this.raPhoneInput.Leave += new System.EventHandler(this.RaPhoneInput_Leave);
-            // 
-            // raBirthday
-            // 
-            this.raBirthday.Location = new System.Drawing.Point(189, 99);
-            this.raBirthday.Name = "raBirthday";
-            this.raBirthday.Size = new System.Drawing.Size(200, 21);
-            this.raBirthday.TabIndex = 8;
-            // 
-            // raGenderW
-            // 
-            this.raGenderW.AutoSize = true;
-            this.raGenderW.Location = new System.Drawing.Point(303, 75);
-            this.raGenderW.Name = "raGenderW";
-            this.raGenderW.Size = new System.Drawing.Size(35, 16);
-            this.raGenderW.TabIndex = 7;
-            this.raGenderW.TabStop = true;
-            this.raGenderW.Text = "女";
-            this.raGenderW.UseVisualStyleBackColor = true;
-            // 
-            // raGenderM
-            // 
-            this.raGenderM.AutoSize = true;
-            this.raGenderM.Location = new System.Drawing.Point(191, 74);
-            this.raGenderM.Name = "raGenderM";
-            this.raGenderM.Size = new System.Drawing.Size(35, 16);
-            this.raGenderM.TabIndex = 6;
-            this.raGenderM.TabStop = true;
-            this.raGenderM.Text = "男";
-            this.raGenderM.UseVisualStyleBackColor = true;
-            // 
-            // raNameInput
-            // 
-            this.raNameInput.Location = new System.Drawing.Point(189, 31);
-            this.raNameInput.Name = "raNameInput";
-            this.raNameInput.Size = new System.Drawing.Size(100, 21);
-            this.raNameInput.TabIndex = 5;
-            this.raNameInput.TextChanged += new System.EventHandler(this.RaNameInput_TextChanged);
-            this.raNameInput.Leave += new System.EventHandler(this.RaNameInput_Leave);
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(115, 177);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 12);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "常用邮箱：";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(117, 146);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 12);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "手机号：";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(115, 109);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 12);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "出生日期：";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(115, 77);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 12);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "性别：";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(113, 41);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 12);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "姓名：";
             // 
             // rsMajorInfo
             // 
@@ -714,6 +544,180 @@
             this.rsNameLabel.TabIndex = 0;
             this.rsNameLabel.Text = "姓名：";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(115, 55);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(41, 12);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "姓名：";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(115, 102);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(41, 12);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "性别：";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(103, 142);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(65, 12);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "出生日期：";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(109, 189);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(53, 12);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "手机号：";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(103, 233);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(65, 12);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "常用邮箱：";
+            // 
+            // raNameInput
+            // 
+            this.raNameInput.Location = new System.Drawing.Point(182, 51);
+            this.raNameInput.Name = "raNameInput";
+            this.raNameInput.Size = new System.Drawing.Size(168, 21);
+            this.raNameInput.TabIndex = 5;
+            this.raNameInput.TextChanged += new System.EventHandler(this.RaNameInput_TextChanged);
+            this.raNameInput.Leave += new System.EventHandler(this.RaNameInput_Leave);
+            // 
+            // raGenderM
+            // 
+            this.raGenderM.AutoSize = true;
+            this.raGenderM.Checked = true;
+            this.raGenderM.Location = new System.Drawing.Point(182, 100);
+            this.raGenderM.Name = "raGenderM";
+            this.raGenderM.Size = new System.Drawing.Size(35, 16);
+            this.raGenderM.TabIndex = 6;
+            this.raGenderM.TabStop = true;
+            this.raGenderM.Text = "男";
+            this.raGenderM.UseVisualStyleBackColor = true;
+            // 
+            // raGenderW
+            // 
+            this.raGenderW.AutoSize = true;
+            this.raGenderW.Location = new System.Drawing.Point(277, 100);
+            this.raGenderW.Name = "raGenderW";
+            this.raGenderW.Size = new System.Drawing.Size(35, 16);
+            this.raGenderW.TabIndex = 7;
+            this.raGenderW.TabStop = true;
+            this.raGenderW.Text = "女";
+            this.raGenderW.UseVisualStyleBackColor = true;
+            // 
+            // raBirthday
+            // 
+            this.raBirthday.Location = new System.Drawing.Point(182, 138);
+            this.raBirthday.Name = "raBirthday";
+            this.raBirthday.Size = new System.Drawing.Size(200, 21);
+            this.raBirthday.TabIndex = 8;
+            // 
+            // raPhoneInput
+            // 
+            this.raPhoneInput.Location = new System.Drawing.Point(182, 185);
+            this.raPhoneInput.Name = "raPhoneInput";
+            this.raPhoneInput.Size = new System.Drawing.Size(177, 21);
+            this.raPhoneInput.TabIndex = 9;
+            this.raPhoneInput.TextChanged += new System.EventHandler(this.RaPhoneInput_TextChanged);
+            this.raPhoneInput.KeyDown += new System.Windows.Forms.KeyEventHandler(this.RaPhoneInput_KeyDown);
+            this.raPhoneInput.Leave += new System.EventHandler(this.RaPhoneInput_Leave);
+            // 
+            // raEmailInput
+            // 
+            this.raEmailInput.Location = new System.Drawing.Point(182, 229);
+            this.raEmailInput.Name = "raEmailInput";
+            this.raEmailInput.Size = new System.Drawing.Size(177, 21);
+            this.raEmailInput.TabIndex = 10;
+            this.raEmailInput.TextChanged += new System.EventHandler(this.RaEmailInput_TextChanged);
+            this.raEmailInput.KeyDown += new System.Windows.Forms.KeyEventHandler(this.RaEmailInput_KeyDown);
+            this.raEmailInput.Leave += new System.EventHandler(this.RaEmailInput_Leave);
+            // 
+            // raNameInfo
+            // 
+            this.raNameInfo.AutoSize = true;
+            this.raNameInfo.ForeColor = System.Drawing.Color.Red;
+            this.raNameInfo.Location = new System.Drawing.Point(396, 55);
+            this.raNameInfo.Name = "raNameInfo";
+            this.raNameInfo.Size = new System.Drawing.Size(71, 12);
+            this.raNameInfo.TabIndex = 11;
+            this.raNameInfo.Text = "*请输入姓名";
+            this.raNameInfo.Visible = false;
+            // 
+            // raPhoneInfo
+            // 
+            this.raPhoneInfo.AutoSize = true;
+            this.raPhoneInfo.ForeColor = System.Drawing.Color.Red;
+            this.raPhoneInfo.Location = new System.Drawing.Point(396, 189);
+            this.raPhoneInfo.Name = "raPhoneInfo";
+            this.raPhoneInfo.Size = new System.Drawing.Size(95, 12);
+            this.raPhoneInfo.TabIndex = 12;
+            this.raPhoneInfo.Text = "*请输入手机号码";
+            this.raPhoneInfo.Visible = false;
+            // 
+            // raEmailInfo
+            // 
+            this.raEmailInfo.AutoSize = true;
+            this.raEmailInfo.ForeColor = System.Drawing.Color.Red;
+            this.raEmailInfo.Location = new System.Drawing.Point(396, 233);
+            this.raEmailInfo.Name = "raEmailInfo";
+            this.raEmailInfo.Size = new System.Drawing.Size(107, 12);
+            this.raEmailInfo.TabIndex = 13;
+            this.raEmailInfo.Text = "*请输入常用的邮箱";
+            this.raEmailInfo.Visible = false;
+            // 
+            // rbSubmit
+            // 
+            this.rbSubmit.BackColor = System.Drawing.Color.Teal;
+            this.rbSubmit.Font = new System.Drawing.Font("华文细黑", 12F, System.Drawing.FontStyle.Bold);
+            this.rbSubmit.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.rbSubmit.Location = new System.Drawing.Point(353, 282);
+            this.rbSubmit.Name = "rbSubmit";
+            this.rbSubmit.Size = new System.Drawing.Size(114, 33);
+            this.rbSubmit.TabIndex = 14;
+            this.rbSubmit.Text = "提交";
+            this.rbSubmit.UseVisualStyleBackColor = false;
+            this.rbSubmit.Click += new System.EventHandler(this.RaSubmit_Click);
+            // 
+            // rAdminPanel
+            // 
+            this.rAdminPanel.Controls.Add(this.rbSubmit);
+            this.rAdminPanel.Controls.Add(this.raEmailInfo);
+            this.rAdminPanel.Controls.Add(this.raPhoneInfo);
+            this.rAdminPanel.Controls.Add(this.raNameInfo);
+            this.rAdminPanel.Controls.Add(this.raEmailInput);
+            this.rAdminPanel.Controls.Add(this.raPhoneInput);
+            this.rAdminPanel.Controls.Add(this.raBirthday);
+            this.rAdminPanel.Controls.Add(this.raGenderW);
+            this.rAdminPanel.Controls.Add(this.raGenderM);
+            this.rAdminPanel.Controls.Add(this.raNameInput);
+            this.rAdminPanel.Controls.Add(this.label6);
+            this.rAdminPanel.Controls.Add(this.label5);
+            this.rAdminPanel.Controls.Add(this.label4);
+            this.rAdminPanel.Controls.Add(this.label3);
+            this.rAdminPanel.Controls.Add(this.label2);
+            this.rAdminPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rAdminPanel.Location = new System.Drawing.Point(0, 0);
+            this.rAdminPanel.Name = "rAdminPanel";
+            this.rAdminPanel.Size = new System.Drawing.Size(560, 352);
+            this.rAdminPanel.TabIndex = 26;
+            this.rAdminPanel.Visible = false;
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -781,11 +785,6 @@
         private System.Windows.Forms.ComboBox rsMajorInput;
         private System.Windows.Forms.Label rsMajorLabel;
         private System.Windows.Forms.Panel rAdminPanel;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button rbSubmit;
         private System.Windows.Forms.Label raEmailInfo;
         private System.Windows.Forms.Label raPhoneInfo;
@@ -796,5 +795,10 @@
         private System.Windows.Forms.RadioButton raGenderW;
         private System.Windows.Forms.RadioButton raGenderM;
         private System.Windows.Forms.TextBox raNameInput;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }

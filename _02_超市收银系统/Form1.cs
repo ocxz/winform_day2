@@ -13,6 +13,10 @@ namespace _02_超市收银系统
     public partial class LoginForm : Form
     {
         private static LoginForm loginForm = new LoginForm();
+        public string loginName;
+        public string loginPwd;
+        public int category;
+        public TextBox nameTextBox;
         public static LoginForm getForm()
         {
             return loginForm;
@@ -118,6 +122,7 @@ namespace _02_超市收银系统
         private void LoginForm_Load(object sender, EventArgs e)
         {
             unInput.Focus();
+            nameTextBox = unInput;
         }
 
         private void UpInput_TextChanged(object sender, EventArgs e)
@@ -143,6 +148,32 @@ namespace _02_超市收银系统
         private void UpSeePwd_MouseUp(object sender, MouseEventArgs e)
         {
             upInput.PasswordChar = '*';
+        }
+
+        private void LoginForm_Activated(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UnInput_Enter(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(loginName))
+            {
+                unInput.Text = loginName;
+                upInput.Text = loginPwd;
+                switch (category)
+                {
+                    case 1:
+                        rbStu.Checked = true;
+                        break;
+                    case 2:
+                        rbTea.Checked = true;
+                        break;
+                    case 3:
+                        rbAdmin.Checked = true;
+                        break;
+                }
+            }
         }
     }
 }

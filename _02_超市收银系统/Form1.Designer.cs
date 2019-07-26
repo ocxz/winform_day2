@@ -94,6 +94,7 @@
             this.unInput.Name = "unInput";
             this.unInput.Size = new System.Drawing.Size(199, 21);
             this.unInput.TabIndex = 3;
+            this.unInput.Enter += new System.EventHandler(this.UnInput_Enter);
             // 
             // upInput
             // 
@@ -234,6 +235,7 @@
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "登录";
+            this.Activated += new System.EventHandler(this.LoginForm_Activated);
             this.Load += new System.EventHandler(this.LoginForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
